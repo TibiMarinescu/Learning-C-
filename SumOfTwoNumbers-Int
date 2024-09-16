@@ -1,0 +1,20 @@
+using System;
+
+namespace MyApplication
+{
+    public class Sum
+    {
+        static int SumOfTwoNumbers(int a, int b)
+        {
+            int result = a + b;
+            //Console.WriteLine(result);
+            return result;
+        }
+        static void Main(string[] args)
+        {
+            SumOfTwoNumbers(3, 5);
+        }
+    }
+
+
+}
