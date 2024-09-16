@@ -1,0 +1,24 @@
+using System;
+
+namespace MyApplication
+{
+    public class Sum
+    {
+        static int SumOfTwoNumbers()
+        {
+            Console.Write("Enter the first number: ");
+            string a = Console.ReadLine();
+            Console.Write("Enter the second number: ");
+            string b = Console.ReadLine();
+            int int_a = int.Parse(a);
+            int int_b = int.Parse(b);
+            int result = int_a + int_b;
+            Console.WriteLine($"Sum of the two numbers is: {result}");
+            return result;
+        }
+        static void Main(string[] args)
+        {
+            SumOfTwoNumbers();
+        }
+    }
+}
