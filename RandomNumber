@@ -1,0 +1,28 @@
+using System;
+
+namespace MyApplication
+{
+    public class MyClass
+    {
+        static void Main(string[] args)
+        {
+            //Create an instance of the random class
+            Random random = new Random();
+            //This will give us a random number between 1 and 10
+            int RandomNumber = random.Next(1, 11);
+            Console.WriteLine("Fill in a number between 1 and 10");
+            string from_User = Console.ReadLine();
+            int new_Number;
+            int.TryParse(from_User, out new_Number);
+
+            if (new_Number == RandomNumber)
+            {
+                Console.WriteLine("You guessed it!");
+            }
+            else
+            {
+                Console.WriteLine("You entered a wrong number.");
+            }
+        }
+    }
+}
