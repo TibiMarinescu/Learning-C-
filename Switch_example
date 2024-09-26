@@ -1,0 +1,33 @@
+using System;
+
+namespace MySpace
+{
+    class Program
+    {
+        static string PlanningInCalendar(int month)
+        {
+            string monthName;
+            switch (month)
+            {
+                case 1:
+                    monthName = "January";
+                    break;
+                case 2:
+                    monthName = "February";
+                    break;
+                case 3:
+                    monthName = "March";
+                    break;
+                default:
+                    monthName = "Unknown";
+                    break;
+            }
+            Console.WriteLine($"The month is: {monthName}");
+            return monthName;
+        }
+        static void Main(string[] args)
+        {
+            PlanningInCalendar(4);
+        }
+    }
+}
