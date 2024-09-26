@@ -1,0 +1,42 @@
+using System;
+
+namespace MyNameSpace
+{
+    public class QuizApp
+    {
+        static void Quiz()
+        {
+            string question1 = "What is the capital of Germany?";
+            string answer1 = "BERLIN";
+
+            string question2 = "What is 2+2?";
+            string answer2 = "4";
+
+            string question3 = "What color do you get by mixing blue and yellow?";
+            string answer3 = "GREEN";
+
+            int score = 0;
+
+            Console.WriteLine(question1);
+            string answer1FromUser = Console.ReadLine().ToUpper();
+            Console.WriteLine(question2);
+            string answer2FromUser = Console.ReadLine();
+            Console.WriteLine(question3);
+            string answer3FromUser = Console.ReadLine().ToUpper();
+            if (answer1FromUser == answer1)
+                score++;
+            if (answer2FromUser == answer2)
+                score++;
+            if (answer3FromUser == answer3)
+                score++;
+            Console.WriteLine($"Score is {score}");
+            Console.WriteLine("Note: Maximum possible score is 3. Minimum possible score is 0.");
+        }
+
+        static void Main(string[] args)
+        {
+            Quiz();
+        }
+
+    }
+}
