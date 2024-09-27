@@ -1,0 +1,32 @@
+using System;
+using System.Net.Http.Headers;
+
+namespace MyApplication
+{
+    public class MyClass
+    {
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            Console.WriteLine("********Guess the number********");
+            int nr = random.Next(1, 10);
+            string nm = nr.ToString();
+            Console.WriteLine("Enter a number between 1 and 10");
+            string from_user = Console.ReadLine();
+            
+
+            while (nm != from_user)
+            {
+                Console.WriteLine("You entered a wrong number\n Try again!");
+                Console.WriteLine("Enter a number between 1 and 10");
+                from_user = Console.ReadLine();
+
+            }
+            if (nm == from_user)
+            {
+                Console.WriteLine("Congratulations! You guessed the number!");
+                Console.WriteLine($"Number from computer was {nm}");
+            }
+        }
+    }
+}
