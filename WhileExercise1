@@ -1,0 +1,19 @@
+using System;
+
+namespace MyApplication
+{
+    public class MyClass
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter go or stay:\n");
+            string userChoice = Console.ReadLine();
+            while (userChoice == "go")
+            {
+                Console.WriteLine("It's good that you decided this. Take this chance!");
+                userChoice = "stay";
+            }
+            Console.ReadKey();
+        }
+    }
+}
