@@ -1,0 +1,14 @@
+using System;
+
+namespace MyApplication
+{
+    public class myClass
+    {
+        static void Main(string[] args)
+        {
+            string[] myWeekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+            Console.WriteLine(myWeekDays[3]);
+            Console.ReadKey();
+        }
+    }
+}
