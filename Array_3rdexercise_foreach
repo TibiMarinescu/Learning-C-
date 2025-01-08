@@ -1,0 +1,24 @@
+using System;
+
+namespace MyApplication
+{
+    public class myClass
+    {
+        static void Main(string[] args)
+        {
+            string[] myWeekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+            Console.WriteLine(myWeekDays[3]);
+
+            //Length of the array
+            Console.WriteLine("Length of the array is: " + myWeekDays.Length);
+
+            //Iterate through each value of the array
+            foreach(string weekDay in myWeekDays)
+            {
+                Console.WriteLine("Today is : " + weekDay);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
